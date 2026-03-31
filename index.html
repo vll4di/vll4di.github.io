@@ -6,17 +6,15 @@
   <title>vll4di's website</title>
   <style>
     :root {
-      --bg:           #282828;
-      --bg-soft:      #32302f;
-      --bg1:          #3c3836;
-      --bg2:          #504945;
-      --bg3:          #665c54;
-      --bg4:          #7c6f64;
-      --fg:           #ebdbb2;
-      --fg2:          #d5c4a1;
-      --fg4:          #a89984;
-      --yellow:       #d79921;
-      --bright-yellow:#fabd2f;
+      --bg:            #282828;
+      --bg-soft:       #32302f;
+      --bg1:           #3c3836;
+      --bg3:           #665c54;
+      --fg:            #ebdbb2;
+      --fg2:           #d5c4a1;
+      --fg4:           #a89984;
+      --yellow:        #d79921;
+      --bright-yellow: #fabd2f;
     }
 
     * {
@@ -34,7 +32,6 @@
       padding: 24px 16px;
     }
 
-    /* ── Header ── */
     header {
       text-align: center;
       margin-bottom: 16px;
@@ -53,7 +50,6 @@
       color: var(--fg2);
     }
 
-    /* ── Navigation ── */
     nav {
       display: flex;
       gap: 8px;
@@ -73,19 +69,13 @@
       background-color: var(--bg1);
     }
 
-    nav a:hover {
-      background-color: var(--yellow);
-      color: var(--bg);
-      border-color: var(--yellow);
-    }
-
+    nav a:hover,
     nav a.active {
       background-color: var(--yellow);
       color: var(--bg);
       border-color: var(--yellow);
     }
 
-    /* ── Main Content Box ── */
     main {
       border: 1px solid var(--bg3);
       background-color: var(--bg-soft);
@@ -93,7 +83,6 @@
       margin-bottom: 20px;
     }
 
-    /* ── Picture + Intro Row ── */
     .intro {
       display: flex;
       gap: 20px;
@@ -101,17 +90,12 @@
     }
 
     .picture-box {
-      border: 1px solid var(--bg3);
       width: 160px;
       min-width: 160px;
       height: 160px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      color: var(--fg4);
       flex-shrink: 0;
-      background-color: var(--bg1);
+      border: 1px solid var(--bg3);
+      object-fit: cover;
     }
 
     .intro-text {
@@ -120,7 +104,6 @@
       color: var(--fg2);
     }
 
-    /* ── Body Paragraphs ── */
     .body-text {
       font-size: 0.9rem;
       line-height: 1.6;
@@ -132,7 +115,17 @@
       margin-bottom: 0;
     }
 
-    /* ── Footer ── */
+    .tree {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.85rem;
+      line-height: 1.8;
+      color: var(--fg2);
+      background-color: var(--bg1);
+      border: 1px solid var(--bg3);
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
     footer {
       font-size: 0.85rem;
       color: var(--fg4);
@@ -143,29 +136,33 @@
 <body>
 
   <header>
-    <h1>Title</h1>
-    <p>header</p>
+    <h1>Vll4di's personal website</h1>
+    <p></p>
   </header>
 
   <nav>
     <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
-    <a href="#">Link 3</a>
-    <a href="#">Link 4</a>
-    <a href="#">Link 5</a>
+    <a href="https://www.linkedin.com/in/vladimir-covaci-107835384/">LinkedIn</a>
+    <a href="https://github.com/vll4di">GitHub</a>
+    <a href="setup.html">Setup</a>
   </nav>
 
   <main>
     <div class="intro">
-      <div class="picture-box">picture</div>
+      <img src="images/pic-me.webp" alt="vll4di" class="picture-box" />
       <p class="intro-text">
         <!-- intro text goes here -->
       </p>
     </div>
 
-    <p class="body-text">
-      <!-- paragraph 1 goes here -->
-    </p>
+    <pre class="tree">
+vll4di.github.io/
+├── index.html
+├── about.html
+├── setup.html
+└── images/
+</pre>
 
     <p class="body-text">
       <!-- paragraph 2 goes here -->
@@ -173,7 +170,7 @@
   </main>
 
   <footer>
-  vll4di.github.com | 2026 | vll4di | updated: 2026-03-31
+    vll4di.github.com | 2026 | vll4di | updated: 2026-03-31
   </footer>
 
 </body>
