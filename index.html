@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vll4di's website</title>
   <style>
+    :root {
+      --bg:           #282828;
+      --bg-soft:      #32302f;
+      --bg1:          #3c3836;
+      --bg2:          #504945;
+      --bg3:          #665c54;
+      --bg4:          #7c6f64;
+      --fg:           #ebdbb2;
+      --fg2:          #d5c4a1;
+      --fg4:          #a89984;
+      --yellow:       #d79921;
+      --bright-yellow:#fabd2f;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -12,8 +26,8 @@
     }
 
     body {
-      background-color: #ffffff;
-      color: #000000;
+      background-color: var(--bg);
+      color: var(--fg);
       font-family: Georgia, 'Times New Roman', serif;
       max-width: 760px;
       margin: 0 auto;
@@ -30,11 +44,13 @@
       font-size: 4rem;
       font-weight: bold;
       letter-spacing: -0.01em;
+      color: var(--bright-yellow);
     }
 
     header p {
       font-size: 1.3rem;
       margin-top: 4px;
+      color: var(--fg2);
     }
 
     /* ── Navigation ── */
@@ -47,23 +63,32 @@
 
     nav a {
       display: inline-block;
-      border: 1px solid #000;
+      border: 1px solid var(--bg3);
       padding: 6px 12px;
       font-size: 0.85rem;
-      color: #000;
+      color: var(--fg);
       text-decoration: none;
       text-align: center;
       min-width: 100px;
+      background-color: var(--bg1);
     }
 
     nav a:hover {
-      background-color: #000;
-      color: #fff;
+      background-color: var(--yellow);
+      color: var(--bg);
+      border-color: var(--yellow);
+    }
+
+    nav a.active {
+      background-color: var(--yellow);
+      color: var(--bg);
+      border-color: var(--yellow);
     }
 
     /* ── Main Content Box ── */
     main {
-      border: 1px solid #000;
+      border: 1px solid var(--bg3);
+      background-color: var(--bg-soft);
       padding: 20px;
       margin-bottom: 20px;
     }
@@ -76,7 +101,7 @@
     }
 
     .picture-box {
-      border: 1px solid #000;
+      border: 1px solid var(--bg3);
       width: 160px;
       min-width: 160px;
       height: 160px;
@@ -84,13 +109,15 @@
       align-items: center;
       justify-content: center;
       font-size: 0.9rem;
-      color: #555;
+      color: var(--fg4);
       flex-shrink: 0;
+      background-color: var(--bg1);
     }
 
     .intro-text {
       font-size: 0.9rem;
       line-height: 1.6;
+      color: var(--fg2);
     }
 
     /* ── Body Paragraphs ── */
@@ -98,6 +125,7 @@
       font-size: 0.9rem;
       line-height: 1.6;
       margin-bottom: 16px;
+      color: var(--fg2);
     }
 
     .body-text:last-child {
@@ -107,7 +135,7 @@
     /* ── Footer ── */
     footer {
       font-size: 0.85rem;
-      color: #000080;
+      color: var(--fg4);
       text-align: left;
     }
   </style>
@@ -120,50 +148,32 @@
   </header>
 
   <nav>
-    <a href="#">Link to<br>subdomain 1</a>
-    <a href="#">Link to<br>subdomain 2</a>
-    <a href="#">Link to<br>subdomain 3</a>
-    <a href="#">Link to<br>subdomain 4</a>
-    <a href="#">Link to<br>subdomain 5</a>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <a href="#">Link 5</a>
   </nav>
 
   <main>
     <div class="intro">
       <div class="picture-box">picture</div>
       <p class="intro-text">
-        Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-        Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-        Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-        Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-        Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-        Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-        Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
+        <!-- intro text goes here -->
       </p>
     </div>
 
     <p class="body-text">
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
+      <!-- paragraph 1 goes here -->
     </p>
 
     <p class="body-text">
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
-      Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text Sample Text
+      <!-- paragraph 2 goes here -->
     </p>
   </main>
 
   <footer>
-    vll4di.github.com | 2026 | vll4di | updated: 2026-03-09
+  vll4di.github.com | 2026 | vll4di | updated: 2026-03-31
   </footer>
 
 </body>
