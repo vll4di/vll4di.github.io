@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="icon" href="images/favicon.webp" type="image/webp" />
+ <style>
+    :root {
+      --bg:        #282828;
+      --bg-soft:   #32302f;
+      --bg1:       #3c3836;
+      --bg2:       #504945;
+      --bg3:       #665c54;
+      --bg4:       #7c6f64;
+      --fg:        #ebdbb2;
+      --fg2:       #d5c4a1;
+      --fg4:       #a89984;
+      --yellow:    #d79921;
+      --bright-yellow: #fabd2f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: Georgia, 'Times New Roman', serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: -0.01em;
+      color: var(--bright-yellow);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 4px;
+      color: var(--fg2);
+    }
+
+    /* ── Navigation ── */
+    nav {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      display: inline-block;
+      border: 1px solid var(--bg3);
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      color: var(--fg);
+      text-decoration: none;
+      text-align: center;
+      min-width: 100px;
+      background-color: var(--bg1);
+    }
+
+    nav a:hover {
+      background-color: var(--yellow);
+      color: var(--bg);
+      border-color: var(--yellow);
+    }
+
+    nav a.active {
+      background-color: var(--yellow);
+      color: var(--bg);
+      border-color: var(--yellow);
+    }
+
+    /* ── Main Content Box ── */
+    main {
+      border: 1px solid var(--bg3);
+      background-color: var(--bg-soft);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    main h2 {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      font-weight: bold;
+      color: var(--bright-yellow);
+    }
+
+    main p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 14px;
+      color: var(--fg2);
+    }
+
+    main p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      font-size: 0.85rem;
+      color: var(--fg4);
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>vll4di's personal website</h1>
+    <p></p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="https://www.linkedin.com/in/vladimir-covaci-107835384/">LinkedIn</a>
+    <a href="https://github.com/vll4di">Github</a>
+    <a href="setup.html">Setup</a>
+  </nav>
+<main>
+    <h2>My setup</h2>
+    <p>
+My setup consists of a ThinkPad P50 running an i7-6820HQ at 2.70GHz, an NVIDIA Quadro M1000M, and 32GB of RAM. It currently dual boots between Windows 10 Pro and Arch Linux.
+    </p>
+    <p>
+I am actively working towards ditching Windows entirely and moving to Linux full time but at the moment I stil rely on a few Windows applications for university.
+    </p>
+    
+  </main>
+
+  <footer>
+  vll4di.github.com | 2026 | vll4di | updated: 2026-03-31
+  </footer>
+
+</body>
+</html>
