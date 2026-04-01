@@ -35,6 +35,7 @@
       padding: 24px 16px;
     }
 
+    /* ── Header ── */
     header {
       text-align: center;
       margin-bottom: 16px;
@@ -53,6 +54,7 @@
       color: var(--fg2);
     }
 
+    /* ── Navigation ── */
     nav {
       display: flex;
       gap: 8px;
@@ -72,13 +74,19 @@
       background-color: var(--bg1);
     }
 
-    nav a:hover,
+    nav a:hover {
+      background-color: var(--yellow);
+      color: var(--bg);
+      border-color: var(--yellow);
+    }
+
     nav a.active {
       background-color: var(--yellow);
       color: var(--bg);
       border-color: var(--yellow);
     }
 
+    /* ── Main Content Box ── */
     main {
       border: 1px solid var(--bg3);
       background-color: var(--bg-soft);
@@ -86,49 +94,25 @@
       margin-bottom: 20px;
     }
 
-    .intro {
-      display: flex;
-      gap: 20px;
-      margin-bottom: 20px;
-    }
-
-    .picture-box {
-      width: 160px;
-      min-width: 160px;
-      height: 160px;
-      flex-shrink: 0;
-      border: 1px solid var(--bg3);
-      object-fit: cover;
-    }
-
-    .intro-text {
-      font-size: 0.9rem;
-      line-height: 1.6;
-      color: var(--fg2);
-    }
-
-    .body-text {
-      font-size: 0.9rem;
-      line-height: 1.6;
+    main h2 {
+      font-size: 1.4rem;
       margin-bottom: 16px;
+      font-weight: bold;
+      color: var(--fg);
+    }
+
+    main p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 14px;
       color: var(--fg2);
     }
 
-    .body-text:last-child {
+    main p:last-child {
       margin-bottom: 0;
     }
 
-    .tree {
-      font-family: 'Courier New', Courier, monospace;
-      font-size: 0.85rem;
-      line-height: 1.8;
-      color: var(--fg2);
-      background-color: var(--bg1);
-      border: 1px solid var(--bg3);
-      padding: 16px;
-      margin-bottom: 16px;
-    }
-
+    /* ── Footer ── */
     footer {
       font-size: 0.85rem;
       color: var(--fg4);
@@ -156,10 +140,10 @@
   <main>
     <h2>Useful links</h2>
     <p>Here are some useful or simply interesting links to pages that I recommend to anyone interested in programming, technology, or just looking for some good resources to learn from.</p>
-    
     <p><a href="https://wiby.org/">wiby</a> - A fast search engine to browse the old web </p>
-    <p><a href="https://distrowatch.com/">Distrowatch</a> - A website for updates onLinux distributions </p>
-  
+    <p><a href="https://distrowatch.com/">Distrowatch</a> - A website for updates about Linux distributions </p>
+    <p><a href="https://artixlinux.org/">Artix Linux</a> - A Linux distro based on Arch Linux but without systemd </p>
+
   </main>
 
   <footer>
