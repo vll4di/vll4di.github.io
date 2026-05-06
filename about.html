@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="icon" href="images/favicon.webp" type="image/webp" />
+ <style>
+    :root {
+      --bg:        #282828;
+      --bg-soft:   #32302f;
+      --bg1:       #3c3836;
+      --bg2:       #504945;
+      --bg3:       #665c54;
+      --bg4:       #7c6f64;
+      --fg:        #ebdbb2;
+      --fg2:       #d5c4a1;
+      --fg4:       #a89984;
+      --yellow:    #d79921;
+      --bright-yellow: #fabd2f;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: Georgia, 'Times New Roman', serif;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: -0.01em;
+      color: var(--fg);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 4px;
+      color: var(--fg2);
+    }
+
+    nav {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      display: inline-block;
+      border: 1px solid var(--bg3);
+      padding: 6px 12px;
+      font-size: 0.85rem;
+      color: var(--fg);
+      text-decoration: none;
+      text-align: center;
+      min-width: 100px;
+      background-color: var(--bg1);
+    }
+
+    nav a:hover {
+      background-color: var(--yellow);
+      color: var(--bg);
+      border-color: var(--yellow);
+    }
+
+    nav a.active {
+      background-color: var(--yellow);
+      color: var(--bg);
+      border-color: var(--yellow);
+    }
+
+    main {
+      border: 1px solid var(--bg3);
+      background-color: var(--bg-soft);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    main h2 {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      font-weight: bold;
+      color: var(--fg);
+    }
+
+    main p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      margin-bottom: 14px;
+      color: var(--fg2);
+    }
+
+    main p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: var(--fg4);
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+<!-- Main header -->
+  <header>
+    <h1>vll4di's personal website</h1>
+    <p></p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="https://github.com/vll4di">Github</a>
+    <a href="setup.html">Setup</a>
+    <a href="links.html">Links</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>About Me</h2>
+    <p>
+      I am a BSc student and aspiring cybersecurity professional currently living in the UK.
+      I am also studying towards completing two certifications: Cisco CCNA and EC-Council CEH.
+      Besides networking and cybersecurity I have a strong interest in everything linux and open source in general, currently daily driving an Arch setup installed and configured by myself.
+    </p>
+    <p>
+      This website is a small personal project I decided to take on to get my HTML and
+      CSS skills back into shape. As a kid I briefly played around with webpages without
+      really understanding what I was doing pretty much just copying snippets of html here and there, changing
+      colours, and calling it a day. This time around I wanted to actually learn how
+      things work and build something from scratch, however simple it may be.
+    </p>
+    <p>
+      Hosting this on GitHub Pages since it's free, straightforward,
+      and gives me a reason to get comfortable with Git at the same time. If you are
+      reading this, thanks for stopping by.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://vll4di.github.io">vll4di.github.io</a> | 2026 | updated: 2026-05-06 
+</footer>
+</body>
+</html>
