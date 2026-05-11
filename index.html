@@ -45,5 +45,28 @@ vll4di.github.io/
      <a href="https://vll4di.github.io">vll4di.github.io</a> | 2026 | updated: 2026-05-06 
   </footer>
 
+ <button id="theme-toggle">☀ Light</button>   <!-- ← add here -->
+
+    <script>                                       <!-- ← and this -->
+      const toggle = document.getElementById('theme-toggle');
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        toggle.textContent = '☾ Dark';
+      }
+      toggle.addEventListener('click', () => {
+        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        if (isLight) {
+          document.documentElement.removeAttribute('data-theme');
+          toggle.textContent = '☀ Light';
+          localStorage.setItem('theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+          toggle.textContent = '☾ Dark';
+          localStorage.setItem('theme', 'light');
+        }
+      });
+    </script>
+
 </body>
 </html>
