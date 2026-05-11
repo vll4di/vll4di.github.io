@@ -112,14 +112,16 @@ main {
   color: var(--fg2);
 }
 
-.body-text {
+.body-text,
+main p {
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 16px;
   color: var(--fg2);
 }
 
-.body-text:last-child {
+.body-text:last-child,
+main p:last-child {
   margin-bottom: 0;
 }
 
