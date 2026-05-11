@@ -6,6 +6,99 @@
   <title>Projects</title>
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* ── Widen the page only on the projects tab ── */
+    body {
+      max-width: 960px;
+    }
+
+    /* ── Project grid: 3 cards per row ── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--bg3);
+      background-color: var(--bg1);
+    }
+
+    .project-thumb {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    .project-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.2s ease;
+    }
+
+    .project-thumb:hover img {
+      opacity: 0.85;
+    }
+
+    .project-info {
+      padding: 10px 12px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .project-title a {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 0.88rem;
+      font-weight: bold;
+      color: var(--bright-yellow);
+      text-decoration: none;
+    }
+
+    .project-title a:hover {
+      color: var(--yellow);
+    }
+
+    .project-caption {
+      font-size: 0.78rem;
+      line-height: 1.55;
+      color: var(--fg2);
+      margin: 0;
+      flex: 1;
+    }
+
+    .project-link {
+      font-size: 0.78rem;
+      color: var(--fg4);
+      text-decoration: none;
+      align-self: flex-start;
+      margin-top: 4px;
+    }
+
+    .project-link:hover {
+      color: var(--bright-yellow);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 700px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 440px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -25,37 +118,61 @@
 
   <main>
     <h2>My personal projects</h2>
-    <p>Here you'll find some of my personal projects that I've been working on.</p>
+    <p class="body-text">Here you'll find some of my personal projects that I've been working on.</p>
 
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <a class="project-thumb" href="https://github.com/vll4di/AE2_final" target="_blank" rel="noopener">
+          <img
+            src="https://raw.githubusercontent.com/vll4di/AE2_final/main/Screenshots/menu.png"
+            alt="Disneyland Review Analyser – main menu screenshot"
+          />
+        </a>
+        <div class="project-info">
+          <div class="project-title">
+            <a href="https://github.com/vll4di/AE2_final" target="_blank" rel="noopener">Disneyland Review Analyser</a>
+          </div>
+          <p class="project-caption">
+            Terminal-based Python app that analyses Disneyland park reviews from a CSV dataset.
+            Supports filtering by location and year, average score queries, and matplotlib visualisations.
+            Built for QHO444 – Problem Solving Through Programming.
+          </p>
+          <a class="project-link" href="https://github.com/vll4di/AE2_final" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <!-- Paste more project-card blocks here -->
+
+    </div>
   </main>
 
   <footer>
-    <a href="https://vll4di.github.io">vll4di.github.io</a> | 2026 | updated: 2026-05-06 
-</footer>
+    <a href="https://vll4di.github.io">vll4di.github.io</a> | 2026 | updated: 2026-05-11
+  </footer>
 
+  <button id="theme-toggle">☀ Light</button>
 
-<button id="theme-toggle">☀ Light</button>  
-
-    <script>                                       
-      const toggle = document.getElementById('theme-toggle');
-      const saved = localStorage.getItem('theme');
-      if (saved === 'light') {
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      toggle.textContent = '☾ Dark';
+    }
+    toggle.addEventListener('click', () => {
+      const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+      if (isLight) {
+        document.documentElement.removeAttribute('data-theme');
+        toggle.textContent = '☀ Light';
+        localStorage.setItem('theme', 'dark');
+      } else {
         document.documentElement.setAttribute('data-theme', 'light');
         toggle.textContent = '☾ Dark';
+        localStorage.setItem('theme', 'light');
       }
-      toggle.addEventListener('click', () => {
-        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-        if (isLight) {
-          document.documentElement.removeAttribute('data-theme');
-          toggle.textContent = '☀ Light';
-          localStorage.setItem('theme', 'dark');
-        } else {
-          document.documentElement.setAttribute('data-theme', 'light');
-          toggle.textContent = '☾ Dark';
-          localStorage.setItem('theme', 'light');
-        }
-      });
-    </script>
+    });
+  </script>
 
 </body>
 </html>
