@@ -1,4 +1,4 @@
-/* ── Gruvbox Dark (default) ────────────────────────────────── */
+/* ── Gruvbox Dark (default) ───*/
 :root {
   --bg:            #282828;
   --bg-soft:       #32302f;
@@ -11,7 +11,7 @@
   --bright-yellow: #fabd2f;
 }
 
-/* ── Gruvbox Light ─────────────────────────────────────────── */
+/* ── Gruvbox Light ───*/
 [data-theme="light"] {
   --bg:            #fbf1c7;
   --bg-soft:       #f2e5bc;
@@ -142,7 +142,7 @@ footer {
   text-align: left;
 }
 
-/* ── Theme toggle button ───────────────────────────────────── */
+/* ── Theme toggle button ─── */
 #theme-toggle {
   position: fixed;
   top: 16px;
@@ -160,4 +160,17 @@ footer {
   background-color: var(--yellow);
   color: var(--bg);
   border-color: var(--yellow);
+}
+
+/* ── 88x31 Badges ──── */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.badges img {
+  image-rendering: pixelated; /* keeps pixel art crisp */
+  border: 1px solid var(--bg3);
 }
