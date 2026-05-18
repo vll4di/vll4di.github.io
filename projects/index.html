@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — vll4di</title>
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  
+</head>
+<body>
+
+  <header>
+    <h1>vll4di's personal website</h1>
+    <p></p>
+  </header>
+
+  <nav class="nav-box">
+    <ul class="nav-list">
+      <li><a href="/" >
+        <svg viewBox="0 0 16 16"><path d="M8 1L1 7v8h5v-5h4v5h5V7z"/></svg>
+        Home</a></li>
+      <li><a href="/about/" >
+        <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="2.5" stroke="currentColor" stroke-width="1.2"/><path d="M3 14c0-3 2-5 5-5s5 2 5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        About</a></li>
+      <li><a href="https://github.com/vll4di">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M8 1C4.13 1 1 4.13 1 8c0 3.09 2 5.71 4.79 6.63.35.06.48-.15.48-.34v-1.2c-1.95.42-2.36-.94-2.36-.94-.32-.81-.78-1.03-.78-1.03-.64-.43.05-.42.05-.42.7.05 1.07.72 1.07.72.62 1.07 1.63.76 2.03.58.06-.45.24-.76.44-.93-1.56-.18-3.2-.78-3.2-3.47 0-.77.27-1.39.72-1.88-.07-.18-.31-.89.07-1.85 0 0 .59-.19 1.92.72a6.7 6.7 0 011.75-.24c.59 0 1.19.08 1.75.24 1.33-.91 1.91-.72 1.91-.72.38.96.14 1.67.07 1.85.45.49.72 1.11.72 1.88 0 2.7-1.64 3.29-3.21 3.46.25.22.48.65.48 1.31v1.94c0 .19.12.41.48.34A7.003 7.003 0 0015 8c0-3.87-3.13-7-7-7z" fill="currentColor"/></svg>
+        Github</a></li>
+      <li><a href="/projects/" class="active">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M3 2h10v1l-4 4v7l-2-1.5V7L3 3V2z" fill="currentColor"/></svg>
+        Projects</a></li>
+      <li><a href="/blog/" >
+        <svg viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="1" stroke="currentColor" stroke-width="1.2"/><line x1="5" y1="6" x2="8" y2="6" stroke="currentColor" stroke-width="1.2"/><line x1="5" y1="9" x2="11" y2="9" stroke="currentColor" stroke-width="1.2"/><line x1="5" y1="11.5" x2="11" y2="11.5" stroke="currentColor" stroke-width="1.2"/></svg>
+        Blog</a></li>
+      <li class="dropdown"><a href="#">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Other</a>
+        <div class="drop-menu">
+          <a href="/setup/" >
+            <svg viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="2" stroke="currentColor" stroke-width="1.2"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.22 3.22l1.42 1.42M11.36 11.36l1.42 1.42M3.22 12.78l1.42-1.42M11.36 4.64l1.42-1.42" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+            Setup</a>
+          <a href="/links/" >
+            <svg viewBox="0 0 16 16" fill="none"><path d="M6 3H3a1 1 0 00-1 1v9a1 1 0 001 1h10a1 1 0 001-1V9" stroke="currentColor" stroke-width="1.2"/><path d="M9 2h5v5M14 2L8 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Links</a>
+          <a href="/feed.xml">
+            <svg viewBox="0 0 16 16" fill="none"><circle cx="3" cy="13" r="1.5" fill="currentColor"/><path d="M2 9c3.31 0 6 2.69 6 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M2 5c5.52 0 10 4.48 10 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            RSS Feed</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    
+
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bg3);
+    background-color: var(--bg1);
+  }
+  .project-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  .project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.2s ease;
+  }
+  .project-thumb:hover img { opacity: 0.85; }
+  .project-info {
+    padding: 10px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+  .project-title a {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.88rem;
+    font-weight: bold;
+    color: var(--bright-yellow);
+    text-decoration: none;
+  }
+  .project-title a:hover { color: var(--yellow); }
+  .project-caption {
+    font-size: 0.78rem;
+    line-height: 1.55;
+    color: var(--fg2);
+    margin: 0;
+    flex: 1;
+  }
+  .project-link {
+    font-size: 0.78rem;
+    color: var(--fg4);
+    text-decoration: none;
+    align-self: flex-start;
+    margin-top: 4px;
+  }
+  .project-link:hover { color: var(--bright-yellow); }
+  @media (max-width: 700px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 440px) {
+    .projects-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<h2>My personal projects</h2>
+<p class="body-text">Here you&#39;ll find some of my personal projects that I&#39;ve been working on.</p>
+
+<div class="projects-grid">
+  
+  <div class="project-card">
+    <a class="project-thumb" href="https://github.com/vll4di/AE2_final" target="_blank" rel="noopener">
+      <img
+        src="https://raw.githubusercontent.com/vll4di/AE2_final/main/Screenshots/menu.png"
+        alt="Disneyland Review Analyser - main menu screenshot"
+        loading="lazy"
+      />
+    </a>
+    <div class="project-info">
+      <div class="project-title">
+        <a href="https://github.com/vll4di/AE2_final" target="_blank" rel="noopener">Disneyland Review Analyser</a>
+      </div>
+      <p class="project-caption">Terminal-based Python app that analyses Disneyland park reviews from a CSV dataset. Supports filtering by location and year, average score queries, and matplotlib visualisations. Built for QHO444 - Problem Solving Through Programming.</p>
+      <a class="project-link" href="https://github.com/vll4di/AE2_final" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+  </div>
+  
+  <div class="project-card">
+    <a class="project-thumb" href="https://github.com/vll4di/dotfiles" target="_blank" rel="noopener">
+      <img
+        src="https://raw.githubusercontent.com/vll4di/dotfiles/main/screenshots/suckless.png"
+        alt="dotfiles repository preview"
+        loading="lazy"
+      />
+    </a>
+    <div class="project-info">
+      <div class="project-title">
+        <a href="https://github.com/vll4di/dotfiles" target="_blank" rel="noopener">dotfiles</a>
+      </div>
+      <p class="project-caption">Personal builds of suckless software (dwm, st, dmenu, slstatus) configured for an Artix Linux setup. Gruvbox-themed and patched to personal preference.</p>
+      <a class="project-link" href="https://github.com/vll4di/dotfiles" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+  </div>
+  
+  <div class="project-card">
+    <a class="project-thumb" href="https://github.com/vll4di/corporalis_edu" target="_blank" rel="noopener">
+      <img
+        src="https://raw.githubusercontent.com/vll4di/corporalis_edu/main/screenshots/main_menu.png"
+        alt="Corpo Edu main menu screenshot"
+        loading="lazy"
+      />
+    </a>
+    <div class="project-info">
+      <div class="project-title">
+        <a href="https://github.com/vll4di/corporalis_edu" target="_blank" rel="noopener">corporalis_edu</a>
+      </div>
+      <p class="project-caption">Terminal-based fitness tracker for workouts, nutrition, and body metrics powered by Python and SQLite.</p>
+      <a class="project-link" href="https://github.com/vll4di/corporalis_edu" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+  </div>
+  
+</div>
+
+
+  </main>
+
+  <footer>
+    <a href="https://vll4di.github.io">vll4di.github.io</a> | 2026 | updated: 2026-05-18
+  </footer>
+
+  <div class="badges">
+    <img src="/assets/images/artix.png" alt="Powered by Linux" width="88" height="31">
+    <img src="/assets/images/vim_created.png" alt="vim" width="88" height="31">
+    <img src="/assets/images/thinkpad_button.png" alt="thinkpad" width="88" height="31">
+    <img src="/assets/images/hugo.png" alt="hugo" width="88" height="31">
+  </div>
+
+  <button id="theme-toggle">☀ Light</button>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const saved = localStorage.getItem('theme');
+    if (saved === 'light') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      toggle.textContent = '☾ Dark';
+    }
+    toggle.addEventListener('click', () => {
+      const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+      if (isLight) {
+        document.documentElement.removeAttribute('data-theme');
+        toggle.textContent = '☀ Light';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        toggle.textContent = '☾ Dark';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+
+</body>
+</html>
