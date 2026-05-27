@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>New hugo project</title>
-    <link>https://vll4di.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on New hugo project</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://vll4di.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Placeholder post</title>
-      <link>https://vll4di.github.io/posts/placeholder-post/</link>
+      <link>http://localhost:1313/posts/placeholder-post/</link>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://vll4di.github.io/posts/placeholder-post/</guid>
+      <guid>http://localhost:1313/posts/placeholder-post/</guid>
       <description>&lt;p&gt;This is a placeholder post.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://vll4di.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vll4di.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I am a BSc student and aspiring cybersecurity professional currently living in the UK.&#xA;I am also studying towards completing two certifications: Cisco CCNA and EC-Council CEH.&#xA;Besides networking and cybersecurity I have a strong interest in everything linux and open source in general, currently daily driving an Arch setup installed and configured by myself.&lt;/p&gt;&#xA;&lt;p&gt;(At first)This website started (as) a small personal project I decided to take on to get my HTML and&#xA;CSS skills back into shape (until I got sick of updating everything manually and resorted to HUGO). As a kid I briefly played around with webpages without&#xA;really understanding what I was doing — pretty much just copying snippets of html here and there, changing&#xA;colours, and calling it a day. This time around I wanted to actually learn how&#xA;things work and build something from scratch, however simple it may be.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://vll4di.github.io/links/</link>
+      <link>http://localhost:1313/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vll4di.github.io/links/</guid>
+      <guid>http://localhost:1313/links/</guid>
       <description>&lt;h2 id=&#34;useful-links&#34;&gt;Useful links&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Here are some useful or simply interesting links to pages that I recommend to anyone interested in programming, technology, or just looking for some good resources to learn from.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://wiby.org/&#34;&gt;wiby&lt;/a&gt; - A fast search engine to browse the old web&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://distrowatch.com/&#34;&gt;Distrowatch&lt;/a&gt; - A website for updates about Linux distributions&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://artixlinux.org/&#34;&gt;Artix Linux&lt;/a&gt; - A Linux distro based on Arch Linux but without systemd&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://suckless.org/&#34;&gt;Suckless&lt;/a&gt; - A collection of simple, well-designed Unix tools written in C&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://vll4di.github.io/setup/</link>
+      <link>http://localhost:1313/setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vll4di.github.io/setup/</guid>
+      <guid>http://localhost:1313/setup/</guid>
       <description>&lt;h2 id=&#34;setup&#34;&gt;Setup&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;My setup consists of a ThinkPad P50 (i7-6820HQ, NVIDIA Quadro M1000M, 32GB of RAM). I currently dual boot between Windows 10 Pro and Arch Linux.&lt;/p&gt;&#xA;&lt;p&gt;On the Linux side, I use a minimal configuration with a focus on performance and simplicity based on the suckless tools and vim as my primary editor.&lt;/p&gt;&#xA;&lt;p&gt;I am actively working towards ditching Windows entirely and moving to Linux full time but at the moment I still rely on a few Windows applications for university.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Blog</title>
-      <link>https://vll4di.github.io/blog/</link>
+      <link>http://localhost:1313/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vll4di.github.io/blog/</guid>
+      <guid>http://localhost:1313/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>https://vll4di.github.io/projects/</link>
+      <link>http://localhost:1313/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://vll4di.github.io/projects/</guid>
+      <guid>http://localhost:1313/projects/</guid>
       <description></description>
     </item>
   </channel>
