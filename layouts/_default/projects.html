@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bg3);
+    background-color: var(--bg1);
+  }
+  .project-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  .project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.2s ease;
+  }
+  .project-thumb:hover img { opacity: 0.85; }
+  .project-info {
+    padding: 10px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+  }
+  .project-title a {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 0.88rem;
+    font-weight: bold;
+    color: var(--bright-yellow);
+    text-decoration: none;
+  }
+  .project-title a:hover { color: var(--yellow); }
+  .project-caption {
+    font-size: 0.78rem;
+    line-height: 1.55;
+    color: var(--fg2);
+    margin: 0;
+    flex: 1;
+  }
+  .project-link {
+    font-size: 0.78rem;
+    color: var(--fg4);
+    text-decoration: none;
+    align-self: flex-start;
+    margin-top: 4px;
+  }
+  .project-link:hover { color: var(--bright-yellow); }
+  @media (max-width: 700px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 440px) {
+    .projects-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<h2>My personal projects</h2>
+<p class="body-text">{{ .Params.description }}</p>
+
+<div class="projects-grid">
+  {{ range .Params.projects }}
+  <div class="project-card">
+    <a class="project-thumb" href="{{ .url }}" target="_blank" rel="noopener">
+      <img
+        src="{{ .image }}"
+        alt="{{ .alt }}"
+        loading="lazy"
+      />
+    </a>
+    <div class="project-info">
+      <div class="project-title">
+        <a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+      </div>
+      <p class="project-caption">{{ .caption }}</p>
+      <a class="project-link" href="{{ .url }}" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}

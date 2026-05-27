@@ -1,0 +1,6 @@
+baseURL = "https://vll4di.github.io/"
+locale = 'en-us'
+title = 'New hugo project'
+[outputFormats.RSS]
+  mediatype = "application/rss+xml"
+  baseName = "feed"

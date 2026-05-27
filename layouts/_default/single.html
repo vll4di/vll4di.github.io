@@ -1,0 +1,39 @@
+{{ define "head" }}
+<style>
+  .post-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--fg);
+    margin-bottom: 6px;
+  }
+  .post-meta {
+    font-size: 0.8rem;
+    color: var(--fg4);
+    margin-bottom: 16px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .post-body p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--fg2);
+    margin-bottom: 12px;
+  }
+  .post-body p:last-child { margin-bottom: 0; }
+  hr {
+    border: none;
+    border-top: 1px solid var(--bg3);
+    margin: 20px 0;
+  }
+</style>
+{{ end }}
+
+{{ define "main" }}
+  <h2 class="post-title">{{ .Title }}</h2>
+  {{ if eq .Section "posts" }}
+  <p class="post-meta">{{ .Date.Format "2006-01-02" }}</p>
+  {{ end }}
+
+  <div class="post-body">
+    {{ .Content }}
+  </div>
+{{ end }}

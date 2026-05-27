@@ -1,0 +1,56 @@
+{{ define "main" }}
+
+<style>
+
+hr {
+  border: none;
+  border-top: 1px solid var(--bg3);
+  margin: 20px 0;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--fg);
+  margin-bottom: 16px;
+
+}
+  .post-list { list-style: none; padding: 0; }
+  .post-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--bg1);
+  }
+  .post-list li:last-child { border-bottom: none; }
+  .post-date {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    color: var(--fg4);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .post-list a {
+    font-size: 0.9rem;
+    color: var(--fg2);
+    text-decoration: none;
+  }
+  .post-list a:hover {
+    color: var(--bright-yellow);
+    text-decoration: underline;
+  }
+</style>
+
+<h2 class="page-title">Blog</h2>
+<hr>
+<ul class="post-list">
+  {{ range (where .Site.RegularPages "Section" "posts") }}
+  <li>
+    <span class="post-date">{{ .Date.Format "2006-01-02" }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+{{ end }}

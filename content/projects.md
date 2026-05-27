@@ -1,0 +1,24 @@
+---
+title: "Projects"
+
+
+
+description: "Here you'll find some of my personal projects that I've been working on."
+layout: "projects"
+projects:
+  - title: "Disneyland Review Analyser"
+    url: "https://github.com/vll4di/AE2_final"
+    image: "https://raw.githubusercontent.com/vll4di/AE2_final/main/Screenshots/menu.png"
+    alt: "Disneyland Review Analyser - main menu screenshot"
+    caption: "Terminal-based Python app that analyses Disneyland park reviews from a CSV dataset. Supports filtering by location and year, average score queries, and matplotlib visualisations. Built for QHO444 - Problem Solving Through Programming."
+  - title: "dotfiles"
+    url: "https://github.com/vll4di/dotfiles"
+    image: "https://raw.githubusercontent.com/vll4di/dotfiles/main/screenshots/suckless.png"
+    alt: "dotfiles repository preview"
+    caption: "Personal builds of suckless software (dwm, st, dmenu, slstatus) configured for an Artix Linux setup. Gruvbox-themed and patched to personal preference."
+  - title: "corporalis_edu"
+    url: "https://github.com/vll4di/corporalis_edu"
+    image: "https://raw.githubusercontent.com/vll4di/corporalis_edu/main/screenshots/main_menu.png"
+    alt: "Corpo Edu main menu screenshot"
+    caption: "Terminal-based fitness tracker for workouts, nutrition, and body metrics powered by Python and SQLite."
+---
