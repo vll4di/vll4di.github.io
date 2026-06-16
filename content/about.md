@@ -1,5 +1,8 @@
-## About Me
 ---
+title: "About"
+---
+
+## About Me
 
 I am a BSc student and aspiring cybersecurity professional currently living in the UK.
 I am also studying towards completing two certifications: Cisco CCNA and EC-Council CEH.

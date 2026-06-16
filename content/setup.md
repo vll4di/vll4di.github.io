@@ -1,5 +1,10 @@
-## Setup
 ---
+title: "Setup"
+---
+
+## Setup
+
+
 My setup consists of a ThinkPad P50 (i7-6820HQ, NVIDIA Quadro M1000M, 32GB of RAM). I currently dual boot between Windows 10 Pro and Arch Linux.
 
 On the Linux side, I use a minimal configuration with a focus on performance and simplicity based on the suckless tools and vim as my primary editor.

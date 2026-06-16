@@ -1,6 +1,9 @@
+---
+title: "Links"
+---
+
 ## Useful links
 
--------
 
 Here are some useful or simply interesting links to pages that I recommend to anyone interested in programming, technology, or just looking for some good resources to learn from.
 
@@ -12,3 +15,5 @@ Here are some useful or simply interesting links to pages that I recommend to an
 [Artix Linux](https://artixlinux.org/) - A Linux distro based on Arch Linux but without systemd
 
 [Suckless](https://suckless.org/) - A collection of simple, well-designed Unix tools written in C
+
+[DOS Heaven] (https://www.doshaven.eu/) - An interesting website with various DOS games
