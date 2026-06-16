@@ -1,7 +1,3 @@
----
-title: "About"
----
-
 ## About Me
 
 I am a BSc student and aspiring cybersecurity professional currently living in the UK.
