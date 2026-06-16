@@ -1,13 +1,15 @@
-My personal website — a minimal website built with Hugo and hosted via GitHub Pages.
+My personal website built with Hugo and hosted via GitHub Pages.
 
 ## Pages
 
 - **Home** (`index.html`) — landing page
 - **About** (`about/`) — a bit about me
-- **Setup** (`setup/`) — my setup
-- **Links** (`links/`) — list of useful links
 - **Projects** (`projects/`) — list of my personal projects
 - **Blog** (`blog/`) — blog index, posts in `posts/`
+- **Setup** (`setup/`) — my setup
+- **Links** (`links/`) — list of useful links
+- **RSS Feed** (`rss`) — rss feed
+
 
 ---
 
@@ -20,16 +22,10 @@ vll4di.github.io/                       Root directory
 │   ├── css/
 │   │   └── style.css                   CSS styling file
 │   └── images/                         Images directory
-│       ├── favicon.ico
-│       ├── pic-me.webp
-│       ├── artix.png
-│       ├── vim_created.png
-│       └── thinkpad_button.png
 ├── blog/                               Blog index page
 ├── categories/                         Auto-generated categories
 ├── links/                              Links page
 ├── posts/                              Blog posts directory
-│   └── testing-the-waters/             Placeholder post
 ├── projects/                           Projects page
 ├── setup/                              Setup page
 ├── tags/                               Auto-generated tags
