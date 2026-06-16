@@ -54,9 +54,9 @@
     {{ block "main" . }}{{ end }}
   </main>
 
-  <footer>
-    <a href="https://vll4di.github.io">vll4di.github.io</a> | {{ now.Year }} | updated: {{ now.Format "2006-01-02" }}
-  </footer>
+
+  {{ partial "footer.html" . }}
+
 
   <div class="badges">
     <img src="/assets/images/artix.png" alt="Powered by Linux" width="88" height="31">
