@@ -1,6 +1,6 @@
 ---
 title: "Projects"
----
+
 
 
 description: "Here you'll find some of my personal projects that I've been working on."
