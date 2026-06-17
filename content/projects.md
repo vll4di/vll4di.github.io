@@ -1,5 +1,7 @@
 ---
-title: "Projects"
+title: "Personal projects"
+
+
 
 
 

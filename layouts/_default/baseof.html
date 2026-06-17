@@ -11,7 +11,7 @@
 <body>
 
   <header>
-    <h1>{{ if eq .Section "posts" }}vll4di's blog{{ else }}vll4di's personal website{{ end }}</h1>
+    <h1>{{ if or (eq .Section "posts") (eq .Type "blog") }}vll4di's blog{{ else }}vll4di's website{{ end }}</h1>
     <p></p>
   </header>
 
